@@ -10,4 +10,4 @@ Check out my AirBnB clone [here](https://brilliant-biscuit-5b971c.netlify.app/).
 
 ## Usage
 
-Feel free to explore the content and get in touch with me using the provided contact information.
+Feel free to use it.
