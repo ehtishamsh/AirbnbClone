@@ -1,10 +1,10 @@
 import React from "react";
-import Logo from "./assets/logo.svg";
+import Logo from "../assets/Logo.svg";
 function Header() {
   return (
     <header>
       <nav>
-        <img src="" alt="" />
+        <img src={Logo} alt="" />
       </nav>
     </header>
   );

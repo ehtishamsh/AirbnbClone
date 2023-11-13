@@ -1,10 +1,130 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-
+@media (max-width: 1000px) {
+  .hero_section .img_div img {
+    width: 600px !important;
+  }
+}
+@media (max-width: 684px) {
+  .hero_section .img_div img {
+    width: 430px !important;
+  }
+}
 body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow-x: hidden;
+}
+header {
+  background: #fff;
+  box-shadow: 0px 2.9825618267059326px 7.456404209136963px rgba(0, 0, 0, 0.1);
+}
+header nav {
+  padding: 22px 36px 22px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+header nav img {
+  width: 84px;
+}
+.main_con {
+  padding: 26px 36px 26px 36px;
+}
+.hero_section {
+  margin-bottom: 50px;
+}
+.hero_section .img_div img {
+  width: 700px;
+  margin-bottom: 32px;
+}
+.hero_section h1 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 0px;
+  line-height: 110%;
+  margin-bottom: 16px;
+}
+.img_div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero_section p {
+  font-size: 16px;
+  font-weight: 300;
+  max-width: 320px;
+  font-style: normal;
+  line-height: 110%;
+  color: #222;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.card_section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 176px;
+  position: relative;
+}
+.card_img {
+  height: 235px;
+  border-radius: 9px;
+}
+.card_section div {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.star {
+  width: 12px;
+  padding-bottom: 1px;
+}
+
+.card_section p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #222;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 110%;
+}
+.rating_span {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #918e9b;
+}
+.disc {
+  font-weight: 600 !important;
+}
+.disc span {
+  color: #918e9b;
+  font-weight: 300;
+}
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 10.3px;
+  padding: 5px 6px 4px 6px;
+  background-color: #fff;
+  border-radius: 2px;
+  margin-top: 6px;
+  margin-left: 6px;
+  font-weight: 400;
+  line-height: 110%;
+  text-align: center;
+  vertical-align: middle !important;
+}
+
+.card_div {
+  display: flex;
+  gap: 18px;
 }
