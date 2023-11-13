@@ -1,32 +1,31 @@
 import React from "react";
 import Star from "../assets/Star.png";
-function Card({
-  imgName,
-  Star_rating = "5.0",
-  numOfReviews,
-  country,
-  title,
-  price,
-  status,
-}) {
+function Card(props) {
+  let text;
+  if (props.openSpots === 0) {
+    text = "SOLD OUT";
+  } else if (props.location === "Online") {
+    text = "ONLINE";
+  }
   return (
     <section className="card_section">
-      <img src={`./${imgName}`} alt="" className="card_img" />
+      <img src={`./Allimages/${props.coverImg}`} alt="" className="card_img" />
       <div>
         <img src={Star} alt="" className="star" />
         <p>
-          {Star_rating}
+          {props.stats.rating}
           <span className="rating_span">
-            <span>({numOfReviews})</span>.<span>{country}</span>
+            <span>({props.stats.reviewCount})</span>.
+            <span>{props.location}</span>
           </span>
         </p>
       </div>
-      <p>{title}</p>
+      <p>{props.title}</p>
       <p className="disc">
-        From ${price}
+        From ${props.price}
         <span>/ Person</span>
       </p>
-      <span className="box">{status}</span>
+      {text && <span className="box">{text}</span>}
     </section>
   );
 }
